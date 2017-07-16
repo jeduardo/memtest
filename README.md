@@ -1,5 +1,7 @@
 # memtest
 
+[![Build Status](https://travis-ci.org/jeduardo/memtest.svg?branch=master)](https://travis-ci.org/jeduardo/memtest)
+
 This is a simply utility which allocates as much megabytes of RAM as requested, pausing 0 or more seconds during allocation. It was designed to verify the progression of memory allocation on Linux environments under cgroups constraints for memory usage.
 
 ## Building
@@ -7,7 +9,7 @@ This is a simply utility which allocates as much megabytes of RAM as requested, 
 The following dependencies are required to build the software: gcc, automake, and [valgrind](http://valgrind.org/) for the small test suite.
 
 * `make all` to build, test, and prepare the program for release.
-* `make check` to build and test the program.
+* `make test` to build and test the program.
 * `make memtest` to just build the program.
 * `make clean` to clean the entire workspace.
 
