@@ -16,7 +16,6 @@ int main (int argc, char** argv) {
     int sleep_time = 0;
     int i = 0;
     char c = 0;
-    int size = 0;
     char **mem = NULL;
 
     while ((c = getopt (argc, argv, "m:s:")) != -1) {

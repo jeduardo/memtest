@@ -1,7 +1,7 @@
 all: release
 
 memtest: memtest.c
-	gcc -o memtest memtest.c
+	gcc -Wall -o memtest memtest.c
 
 clean:
 	rm memtest
