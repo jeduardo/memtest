@@ -7,7 +7,7 @@
 #define MB 1024 * KB
 
 void print_usage_and_quit(char *progname) {
-    printf("%s: -m <memory in bytes> [-s <sleep time in seconds>]\n", progname);
+    printf("%s: -m <memory in MB> [-s <sleep time in seconds>]\n", progname);
     exit(EXIT_FAILURE);
 }
 
