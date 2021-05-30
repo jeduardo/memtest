@@ -1,0 +1,27 @@
+name: "pre-release"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  pre-release:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: "Build and test"
+        run: |
+          sudo apt-get -qq update
+          sudo apt-get install -y valgrind make gcc
+          make test
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development build"
+          files: |
+            LICENSE.txt
+            README.md
+            memtest

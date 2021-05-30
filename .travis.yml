@@ -1,8 +1,0 @@
-language: c
-dist: trusty
-sudo: required
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y valgrind
-script:
-  - make test
