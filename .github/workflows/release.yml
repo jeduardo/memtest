@@ -1,4 +1,4 @@
-name: "pre-release"
+name: "build-and-release"
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
       - master
 
 jobs:
-  pre-release:
+  build-and-release:
     runs-on: ubuntu-20.04
 
     steps:
       - name: Checkout repo
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
 
       - name: "Build and test"
         run: |
