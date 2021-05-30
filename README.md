@@ -1,6 +1,6 @@
 # memtest
 
-[![Build Status](https://travis-ci.org/jeduardo/memtest.svg?branch=master)](https://travis-ci.org/jeduardo/memtest)
+[![build-and-release Actions Status](https://github.com/jeduardo/memtest/workflows/build-and-release/badge.svg)](https://github.com/jeduardo/memtest/actions)
 
 This is a simple utility which allocates as much megabytes of RAM as requested, pausing 0 or more seconds during allocation. It was designed to verify the progression of memory allocation on Linux environments under cgroups constraints for memory usage.
 
